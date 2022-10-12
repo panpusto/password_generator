@@ -4,4 +4,4 @@
 - CSS
 - HTML
 
-![alt text](../app_screen/app_preview.png)
+![alt text](app_screen/app_preview.png)
