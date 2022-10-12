@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="password-container">
+        <div class="password-header">
+            <div class="password">
+                <span id="pw">Password Here</span>
+                <button id="copy-btn">Copy</button>
+            </div>
+        </div>
+        <div class="password-body">
+            <div class="form-control">
+                <label for="length">Password length</label>
+                <input id="length" value="10" type="number" min="8" max="20">
+            </div>
+            <div class="form-control">
+                <label for="lower-case">Contain lowercase letters</label>
+                <input id="lower-case" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="upper-case">Contain uppercase letters</label>
+                <input id="upper-case" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="number">Contain numbers</label>
+                <input id="number" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="symbol">Contain symbol</label>
+                <input id="symbol" type="checkbox">
+            </div>
+            <button class="pass-generator" id="generator">
+                Generate password
+            </button>
+        </div>
+    </div>
+    <script src="styles/js/app.js"></script>
+</body>
+</html>
